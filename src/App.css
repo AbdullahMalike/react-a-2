@@ -97,3 +97,6 @@
   border-radius: 30px;
   box-shadow: RGB(225, 93, 68) 0px 5px 20px 0px;
 }
+.paraedit{
+  display: inline-block;
+}

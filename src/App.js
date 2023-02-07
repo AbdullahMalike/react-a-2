@@ -9,7 +9,7 @@ function App() {
 
   let addvalue = ()=>{
     let a= text;
-    ar.push(a)
+    ar.push(a);
     setarr([...ar]);
    
   }
@@ -20,13 +20,14 @@ function App() {
     setarr([]);
   }
 
- const [id,setid] = useState(0)
+//  const [id,setid] = useState(0)
 
- let deletetask = ()=>{
-  setid(0);
-  ar.pop(text);
+ let deletetask = (index)=>{
+  // setid(0);
+  ar.splice(index,1);
   setarr([...ar])
  }
+
 
 
 // html code 
@@ -53,12 +54,13 @@ function App() {
   ar.map((abc,i)=>{
     return(
     <div>
-      <p key={i}>{abc}</p>
+      <p key={i} className='paraedit'>{abc}</p>
+
 {/* edit button  */}
-<button>Edit Task</button>
+{/* <button >Edit Task</button> */}
 
 {/* del task button  */}
-<button onClick={deletetask}>Delete Task</button>
+<button className='editdelbutton' onClick={()=>deletetask(i)}>Delete Task</button>
 
     </div>
       )
