@@ -29,6 +29,12 @@ function App() {
  }
 
 
+let edittask = (i)=>{
+var  newval =window.prompt("Enter new value");
+ar.splice(i,1,newval);
+setarr([...ar]);
+} 
+
 
 // html code 
 
@@ -57,7 +63,7 @@ function App() {
       <p key={i} className='paraedit'>{abc}</p>
 
 {/* edit button  */}
-{/* <button >Edit Task</button> */}
+<button className='editbutton' onClick={()=>edittask(i)}>Edit Task</button>
 
 {/* del task button  */}
 <button className='editdelbutton' onClick={()=>deletetask(i)}>Delete Task</button>
