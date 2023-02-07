@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.inpedit{
+  width: 500px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid #ccc;
+  margin-top: 20px;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.inpedit:focus{
+  border: 2px solid #de6262;
+}
+.edittext{
+  /* margin-top: -150px; */
+  color: #de6262 ;
+  
+}
+.editbutton{
+  width: 120px;
+  height: 35px;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.editdelbutton{
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid red;
+  margin-left: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.editdelbutton:hover{
+  width: 120px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  cursor:pointer ;
+}
+.editbutton:hover{
+  width: 120px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: greenyellow;
+  cursor:pointer ;
+}
+.editline{
+  width: 200px;
+}
+.editapp{
+  border: 1px solid white;
+  width: 900px;
+  height: 85vh;
+  border-radius: 30px;
+  box-shadow: RGB(225, 93, 68) 0px 5px 20px 0px;
+}
